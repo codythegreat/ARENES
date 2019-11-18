@@ -33,7 +33,7 @@ struct _6502 {
     // The stack points to current 
     // location on the bus
     uint8_t stackPtr = 0x00;
-    uint8_t programCounter = 0x00;
+    uint16_t programCounter = 0x00;
     uint8_t status = 0x00;
 
     // pointer to the bus so that
@@ -52,6 +52,118 @@ struct _6502 {
 // captured with NIO (Non Impl-
 // emented Opcode)
 
-// TODO: build out 56 opcodes
+// add with carry
+uint8_t ADC();
+// and (with accumulator)
+uint8_t AND();
+// arithmetic shift left
+uint8_t ASL();
+// branch on carry clear
+uint8_t BCC();
+// branch on carry set
+uint8_t BCS();
+// branch on equal
+uint8_t BEQ();
+// bit test
+uint8_t BIT();
+// branch on minus (negative set)
+uint8_t BMI();
+// branch on not equal (zero clear)
+uint8_t BNE();
+// branch on plus (negative clear)
+uint8_t BPL();
+// break
+uint8_t BRK();
+// branch on overflow clear
+uint8_t BVC();
+// branch on overflow set
+uint8_t BVS();
+// clear carry
+uint8_t CLC();
+// clear decimal
+uint8_t CLD();
+// clear interrupt disable
+uint8_t CLI();
+// clear overflow
+uint8_t CLV();
+// compare with accumulator
+uint8_t CMP();
+// compare with X
+uint8_t CPX();
+// compare with y
+uint8_t CPY();
+// decrement accumulator
+uint8_t DEC();
+// decrement x
+uint8_t DEX();
+// decrement y
+uint8_t DEY();
+// exclusive or with accumulator
+uint8_t EOR();
+// increment accumulator
+uint8_t INC();
+// increment x
+uint8_t INX();
+// increment y
+uint8_t INY();
+// jump
+uint8_t JMP();
+// jump to subroutine
+uint8_t JSR();
+// load accumulator
+uint8_t LDA();
+// load x
+uint8_t LDX();
+// load y
+uint8_t LDY();
+// logical shift right
+uint8_t LSR();
+// no operation
+uint8_t NOP();
+// or with accumulator
+uint8_t ORA();
+// push accumulator
+uint8_t PHA();
+// push processor status
+uint8_t PHP();
+// pull accumulator
+uint8_t PLA();
+// pull processor status
+uint8_t PLP();
+// rotate one bit left
+uint8_t ROL();
+// rotate one bit right
+uint8_t ROR();
+// return from interrupt
+uint8_t RTI();
+// return from subroutine
+uint8_t RTS();
+// subtract with carry
+uint8_t SBC();
+// set carry
+uint8_t SEC();
+// set decimal
+uint8_t SED();
+// set interrupt disable
+uint8_t SEI();
+// store accumulator
+uint8_t STA();
+// store x
+uint8_t STX();
+// store y
+uint8_t STY();
+// transfer accumulator to x
+uint8_t TAX();
+// transfer accumulator to y
+uint8_t TAY();
+// transfer stack pointer to X
+uint8_t TSX();
+// transfer x to accumulator
+uint8_t TXA();
+// transfer x to stack pointer
+uint8_t TXS();
+// transfer y to accumulator
+uint8_t TYA();
 
 // TODO: build out any illegal opcodes we need
+// TODO: build out NIO opcode
