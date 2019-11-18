@@ -9,6 +9,9 @@ ARENES is really nothing more than a presonal fun project, but I'm planning on t
 Current goals include:
 
 + completion of 6502 emulator `[ ]`
+    + 56 legal opcodes `[ ]`
+    + necessary illegal opcodes `[ ]`
+    + connection to bus and ability to read/write to other devices `[ ]`
 + completion unit testing for 6502 emulator `[ ]`
 + logging mode of 6502 emulator `[ ]`
 
