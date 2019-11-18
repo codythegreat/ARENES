@@ -1,5 +1,7 @@
 ### ARENES (Another Redundant Emulator for the NES)
 
+**DISCLAIMER** This repo is very early in development.
+
 ARENES (Pronounced are-nes) is a nes emulator based on OneLoneCoder's implementation in C++ (You can find that here: https://github.com/OneLoneCoder/olcNES/)
 
 ARENES is really nothing more than a presonal fun project, but I'm planning on taking some deviations from OLC's project (This is written in C instead of C++, and this will also implement some of the illegal opcodes of the 6502)
