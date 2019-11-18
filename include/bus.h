@@ -11,6 +11,7 @@ struct bus {
     struct apu *apu;
     struct cartridge *cartridge;
     struct ppu *ppu;
+    uint8_t ram[0xFFFF];
 }
 
 uint8_t read(uint16_t address);
